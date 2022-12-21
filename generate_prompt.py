@@ -2,19 +2,19 @@ import random
 from hot_fix import help_generate_prompt
 
 
-def generate_prompt(words: list) -> str:
+def generate_prompts_list(word: str) -> list:
     '''
-    :param words: all words from db in list
-    :return: prompt
+    :param word:
+    :return: list of prompts
     '''
-    count_words = len(words)
-    index_word = random.randint(0, count_words - 1)
-    word = words[index_word]
-    prompt_lenght = random.randint(2, 4)
-    prompt_lenght = help_generate_prompt(prompt_lenght, len(word))
-    index_start = random.randint(0, len(word) - prompt_lenght)
-    prompt = word[index_start:index_start+prompt_lenght]
-    return prompt
+    prompt_list = []
+    for i in range(0, len(word) - 1):
+        prompt_list.append(word[i] + word[i + 1])
+    for i in range(0, len(word) - 2):
+        prompt_list.append(word[i] + word[i + 1] + word[i + 2])
+    for i in range(0, len(word) - 3):
+        prompt_list.append(word[i] + word[i + 1] + word[i + 2] + word[i + 3])
+    return prompt_list
 
 
 def counter_prompt_coincidences(all_fields: object, prompt: str) -> int and list:

@@ -19,3 +19,4 @@ def add_prompt(prompt: str, count: int, words: list):
 def delete_prompt(id: int):
     row = Prompts.get(Prompts.id == id)
     row.delete_instance()
+
