@@ -1,0 +1,14 @@
+
+.idea/.name
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/len9.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+__pycache__/app.cpython-310.pyc
+__pycache__/exceptions.cpython-310.pyc
+__pycache__/generate_prompt.cpython-310.pyc
+__pycache__/hot_fix.cpython-310.pyc
+__pycache__/main.cpython-310.pyc
+__pycache__/model.cpython-310.pyc
+__pycache__/telegramm.cpython-310.pyc
